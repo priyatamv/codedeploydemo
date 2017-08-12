@@ -1,5 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /home/ec2-user/tomcat/webapps/ROOT
+  - source: /common/*.*
+  destination: /home/ec2-user/tomcat/webapps/ROOT
+  - source: /customers/eos/*.*
+  destination: /home/ec2-user/tomcat/webapps/ROOT
