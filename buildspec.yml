@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - wget https://github.com/priyatamv/codedeploydemo.git
+      - git clone  https://github.com/priyatamv/codedeploydemo.git
    post_build:
     commands:
       - echo Build completed on `date`
