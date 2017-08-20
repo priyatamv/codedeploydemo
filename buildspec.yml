@@ -11,7 +11,6 @@ phases:
     commands:
       - echo Build started on `date`
       - wget https://github.com/priyatamv/codedeploydemo.git
-      - export PATH=/opt/codedeploydemo:$PATH
    post_build:
     commands:
       - echo Build completed on `date`
