@@ -1,0 +1,21 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - git clone https://github.com/priyatamv/codedeploydemo.git
+      - mkdir aws-sdk-cpp/build
+      - tar -c ./aws-sdk-cpp/build > aws-sdk-cpp.tar
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - aws-sdk-cpp.tar
