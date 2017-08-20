@@ -12,10 +12,11 @@ phases:
       - echo Build started on `date`
       - git clone https://github.com/priyatamv/codedeploydemo.git
       - mkdir aws-sdk-cpp/build
-      - tar -c ./aws-sdk-cpp/build > aws-sdk-cpp.tar
+      - rsync -av --progress codedeploydemo /aws-sdk-cpp/build --exclude bio
+      - tar -zcvf codedeploydemo.tar.gz /aws-sdk-cpp/build
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - aws-sdk-cpp.tar
+    - codedeploydemo.tar.gz
