@@ -10,7 +10,6 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date` for code build
       - /codebuild/output/src064299797/src/github.com/priyatamv/codedeploydemo/scripts/build-script.sh
    post_build:
     commands:
