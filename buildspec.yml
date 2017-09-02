@@ -4,13 +4,14 @@ phases:
   install:
     commands:
       - echo Entering install phase...
-      - wget https://github.com/priyatamv/codedeploydemo.git
+      - wget https://github.com/priyatamv/codedeploydemo.git -C /tmp/
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Build started on `date`
+      - /tmp/codedeploydemo/script/build-script.sh
    post_build:
     commands:
       - echo Build completed on `date`
