@@ -10,7 +10,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started on `date` for code build
       - /tmp/codedeploydemo/scripts/build-script.sh
    post_build:
     commands:
