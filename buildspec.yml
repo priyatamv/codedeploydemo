@@ -10,4 +10,4 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-     - /codedeploydemo/scripts/build-script.sh
+     - ./codedeploydemo/scripts/build-script.sh
