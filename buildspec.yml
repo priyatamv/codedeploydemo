@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo Entering install phase...
-      - wget https://github.com/priyatamv/codedeploydemo.git -C /tmp
+      - wget https://github.com/priyatamv/codedeploydemo.git
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
