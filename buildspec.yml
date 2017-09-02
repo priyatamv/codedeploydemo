@@ -11,7 +11,7 @@ phases:
   build:
     commands:
       - echo Build started on `date` for code build
-      - /tmp/codedeploydemo/scripts/build-script.sh
+      - /codebuild/output/src064299797/src/github.com/priyatamv/codedeploydemo/scripts/build-script.sh
    post_build:
     commands:
       - echo Build completed on `date`
